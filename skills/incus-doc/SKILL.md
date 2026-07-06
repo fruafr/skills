@@ -9,7 +9,7 @@ metadata:
   version: 1.2.0
   updated: 2026-07-06
   author: David HEURTEVENT
-  source: https://github.com/fruafr/skills/incus-doc
+  source: https://github.com/fruafr/skills/tree/main/skills/incus-doc
   owner: David HEURTEVENT
   tags: incus, container, virtual-machine, virtualization, cli, documentation, hallucination-reduction, lxc
 ---
