@@ -4,7 +4,7 @@ Offline authoritative [Incus](https://linuxcontainers.org/incus/docs/main/) CLI 
 
 It combines:
 - a copy of the official online incus documentation in [./references/docs](./references/docs)
-- a copy of cli help messages in [./references/cli](./references/cli)
+- a copy of the cli help messages in [./references/cli](./references/cli)
 - a copy of the man pages in [./references/man](./references/man)
 
 It seeks to reduce hallucinations by routing all claims through verified reference files. 
