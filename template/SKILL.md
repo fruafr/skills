@@ -84,6 +84,7 @@ metadata:
 ## Examples
 
 **✅ Good:** Input → Output (1–2 lines on why it works)
+
 **❌ Bad:** Output → corrected version (1 line on what failed)
 
 ## Change log
