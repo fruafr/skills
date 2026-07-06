@@ -34,7 +34,7 @@ Always test the skill thoroughly in your own environment before relying on it fo
     - Entry point: [./references/cli-help.md](./references/cli-help.md)
     - List extracted: [./references/incus-cli.txt](./references/incus-cli.txt)
 - [./references/docs](./references/docs): contains 
-    - Entry point: [./references/docs/index.md](./references/index.md)
+    - Entry point: [./references/docs/index.md](./references/docs/index.md)
     - List extracted: [./references/incus-doc-links.txt](./references/incus-doc-links.txt)
 - [./references/man](./references/man): contains one txt file for each command / sub-command with man page available (e.g. `man incus`).
     - Entry point: [./references/cli-man.md](./references/cli-man.md)
