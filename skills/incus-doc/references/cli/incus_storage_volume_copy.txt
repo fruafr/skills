@@ -1,0 +1,29 @@
+cmd: incus storage volume copy
+output:
+Description:
+  Copy custom storage volumes
+
+Usage:
+  incus storage volume copy [<remote>:]<pool>/<volume>[/<snapshot>] [<remote>:]<pool>/<volume> [flags]
+
+Aliases:
+  copy, cp
+
+Flags:
+      --destination-target      Destination cluster member name
+      --mode                    Transfer mode. One of pull (default), push or relay. (default "pull")
+      --refresh                 Refresh and update the existing storage volume copies
+      --refresh-exclude-older   During refresh, exclude source snapshots earlier than latest target snapshot
+      --target                  Cluster member name
+      --target-project          Copy to a project different from the source
+      --volume-only             Copy the volume without its snapshots
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

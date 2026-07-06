@@ -1,0 +1,25 @@
+cmd: incus publish
+output:
+Description:
+  Publish instances as images
+
+Usage:
+  incus publish [<remote>:]<instance>[/<snapshot>] [<remote>:] [flags] [key=value...]
+
+Flags:
+      --alias              New alias to define at target
+      --compression none   Compression algorithm to use (none for uncompressed)
+      --expire             Image expiration date (format: rfc3339)
+  -f, --force              Stop the instance if currently running
+      --public             Make the image public
+      --reuse              If the image alias already exists, delete and create a new one
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

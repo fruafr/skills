@@ -1,0 +1,40 @@
+cmd: incus project list
+output:
+Description:
+  List projects
+
+  The -c option takes a (optionally comma-separated) list of arguments
+  that control which image attributes to output when displaying in table
+  or csv format.
+  Default column layout is: nipvbwzdu
+  Column shorthand chars:
+
+  n - Project Name
+  i - Images
+  p - Profiles
+  v - Storage Volumes
+  b - Storage Buckets
+  w - Networks
+  z - Network Zones
+  d - Description
+  u - Used By
+
+Usage:
+  incus project list [<remote>:] [flags]
+
+Aliases:
+  list, ls
+
+Flags:
+  -c, --columns   Columns (default "nipvbwzdu")
+  -f, --format    Format (csv|json|table|yaml|compact), use suffix ",noheader" to disable headers and ",header" to enable it if missing, e.g. csv,header (default "table")
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

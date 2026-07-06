@@ -1,0 +1,28 @@
+cmd: incus storage volume import
+output:
+Description:
+  Import custom storage volumes.
+
+Usage:
+  incus storage volume import [<remote>:]<pool> <backup file> [<volume name>] [flags]
+
+Examples:
+  incus storage volume import default backup0.tar.gz
+      Create a new custom volume using backup0.tar.gz as the source
+
+  incus storage volume import default some-installer.iso installer --type=iso
+      Create a new custom volume storing some-installer.iso for use as a CD-ROM image
+
+Flags:
+      --target   Cluster member name
+      --type     Import type, backup or iso (default "backup")
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

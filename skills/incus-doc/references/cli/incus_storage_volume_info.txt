@@ -1,0 +1,30 @@
+cmd: incus storage volume info
+output:
+Description:
+  Show storage volume state information
+
+  If the type is not specified, Incus assumes the type is "custom".
+  Supported values for type are "custom", "container" and "virtual-machine".
+
+Usage:
+  incus storage volume info [<remote>:]<pool> [<type>/]<volume> [flags]
+
+Examples:
+  incus storage volume info default foo
+      Returns state information for a custom volume "foo" in pool "default"
+
+  incus storage volume info default virtual-machine/v1
+      Returns state information for virtual machine "v1" in pool "default"
+
+Flags:
+      --target   Cluster member name
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

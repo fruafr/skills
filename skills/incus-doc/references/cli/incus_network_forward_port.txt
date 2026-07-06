@@ -1,0 +1,23 @@
+cmd: incus network forward port
+output:
+Description:
+  Manage network forward ports
+
+Usage:
+  incus network forward port [command]
+
+Available Commands:
+  add         Add ports to a forward
+  remove      Remove ports from a forward
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number
+
+Use "incus network forward port [command] --help" for more information about a command.

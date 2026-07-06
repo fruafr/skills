@@ -1,0 +1,26 @@
+cmd: incus file mount
+output:
+Description:
+  Mount files from instances
+
+Usage:
+  incus file mount [<remote>:]<instance>[/<path>] [<target path>] [flags]
+
+Examples:
+  incus file mount foo/root fooroot
+     To mount /root from the instance foo onto the local fooroot directory.
+
+Flags:
+      --auth-user string   Set authentication user when using SSH SFTP listener
+      --listen string      Setup SSH SFTP listener on address:port instead of mounting
+      --no-auth            Disable authentication when using SSH SFTP listener
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

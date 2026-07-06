@@ -1,0 +1,33 @@
+cmd: incus storage bucket
+output:
+Description:
+  Manage storage buckets.
+
+Usage:
+  incus storage bucket [flags]
+  incus storage bucket [command]
+
+Available Commands:
+  create      Create new custom storage buckets
+  delete      Delete storage buckets
+  edit        Edit storage bucket configurations as YAML
+  export      Export storage bucket
+  get         Get values for storage bucket configuration keys
+  import      Import storage bucket
+  key         Manage storage bucket keys
+  list        List storage buckets
+  set         Set storage bucket configuration keys
+  show        Show storage bucket configurations
+  unset       Unset storage bucket configuration keys
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number
+
+Use "incus storage bucket [command] --help" for more information about a command.

@@ -1,0 +1,32 @@
+cmd: incus snapshot create
+output:
+Description:
+  Create instance snapshots
+
+  When --stateful is used, attempt to checkpoint the instance's
+  running state, including process memory state, TCP connections, ...
+
+Usage:
+  incus snapshot create [<remote>:]<instance> [<snapshot name>] [flags]
+
+Examples:
+  incus snapshot create u1 snap0
+  	Create a snapshot of "u1" called "snap0".
+
+  incus snapshot create u1 snap0 < config.yaml
+  	Create a snapshot of "u1" called "snap0" with the configuration from "config.yaml".
+
+Flags:
+      --no-expiry   Ignore any configured auto-expiry for the instance
+      --reuse       If the snapshot name already exists, delete and create a new one
+      --stateful    Whether or not to snapshot the instance's running state
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

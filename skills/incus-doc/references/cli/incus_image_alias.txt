@@ -1,0 +1,26 @@
+cmd: incus image alias
+output:
+Description:
+  Manage image aliases
+
+Usage:
+  incus image alias [flags]
+  incus image alias [command]
+
+Available Commands:
+  create      Create aliases for existing images
+  delete      Delete image aliases
+  list        List image aliases
+  rename      Rename aliases
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number
+
+Use "incus image alias [command] --help" for more information about a command.

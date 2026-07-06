@@ -1,0 +1,38 @@
+cmd: incus admin init
+output:
+Description:
+  Configure the daemon
+
+Usage:
+  incus admin init [flags]
+
+Examples:
+  init --minimal
+  init --auto [--network-address=IP] [--network-port=8443] [--storage-backend=dir]
+              [--storage-create-device=DEVICE] [--storage-create-loop=SIZE]
+              [--storage-pool=POOL]
+  init --preseed
+  init --dump
+
+
+Flags:
+      --auto                    Automatic (non-interactive) mode
+      --dump                    Dump YAML config to stdout
+      --minimal                 Minimal configuration (non-interactive)
+      --network-address         Address to bind to (default: none)
+      --network-port            Port to bind to (default: 8443) (default -1)
+      --preseed                 Pre-seed mode, expects YAML config from stdin
+      --storage-backend         Storage backend to use (btrfs, dir, lvm or zfs, default: dir)
+      --storage-create-device   Setup device based storage using DEVICE
+      --storage-create-loop     Setup loop based storage with SIZE in GiB (default -1)
+      --storage-pool            Storage pool to use or create
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

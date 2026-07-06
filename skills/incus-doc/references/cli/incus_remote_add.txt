@@ -1,0 +1,29 @@
+cmd: incus remote add
+output:
+Description:
+  Add new remote servers
+
+  URL for remote resources must be HTTPS (https://).
+
+  Basic authentication can be used when combined with the "simplestreams" protocol:
+    incus remote add some-name https://LOGIN:PASSWORD@example.com/some/path --protocol=simplestreams
+
+Usage:
+  incus remote add [<remote>] <IP|FQDN|URL|token> [flags]
+
+Flags:
+      --accept-certificate   Accept certificate
+      --auth-type            Server authentication type (tls or oidc)
+      --project              Project to use for the remote
+      --protocol             Server protocol (incus or simplestreams)
+      --public               Public image server
+      --token                Remote trust token
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

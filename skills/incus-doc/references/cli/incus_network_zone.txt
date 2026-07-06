@@ -1,0 +1,31 @@
+cmd: incus network zone
+output:
+Description:
+  Manage network zones
+
+Usage:
+  incus network zone [flags]
+  incus network zone [command]
+
+Available Commands:
+  create      Create new network zones
+  delete      Delete network zones
+  edit        Edit network zone configurations as YAML
+  get         Get values for network zone configuration keys
+  list        List available network zoneS
+  record      Manage network zone records
+  set         Set network zone configuration keys
+  show        Show network zone configurations
+  unset       Unset network zone configuration keys
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number
+
+Use "incus network zone [command] --help" for more information about a command.

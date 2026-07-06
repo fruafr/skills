@@ -1,0 +1,43 @@
+cmd: incus admin sql
+output:
+Description:
+  Execute a SQL query against the local or global database
+
+    The local database is specific to the cluster member you target the
+    command to, and contains member-specific data (such as the member network
+    address).
+
+    The global database is common to all members in the cluster, and contains
+    cluster-specific data (such as profiles, containers, etc).
+
+    If you are running a non-clustered server, the same applies, as that
+    instance is effectively a single-member cluster.
+
+    If <query> is the special value "-", then the query is read from
+    standard input.
+
+    If <query> is the special value ".dump", the command returns a SQL text
+    dump of the given database.
+
+    If <query> is the special value ".schema", the command returns the SQL
+    text schema of the given database.
+
+    This internal command is mostly useful for debugging and disaster
+    recovery. The development team will occasionally provide hotfixes to users as a
+    set of database queries to fix some data inconsistency.
+
+Usage:
+  incus admin sql <local|global> <query> [flags]
+
+Flags:
+  -f, --format   Format (csv|json|table|yaml|compact), use suffix ",noheader" to disable headers and ",header" to enable it if missing, e.g. csv,header (default "table")
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

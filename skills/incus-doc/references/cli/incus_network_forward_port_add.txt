@@ -1,0 +1,21 @@
+cmd: incus network forward port add
+output:
+Description:
+  Add ports to a forward
+
+Usage:
+  incus network forward port add [<remote>:]<network> <listen_address> <protocol> <listen_port(s)> <target_address> [<target_port(s)>] [flags]
+
+Flags:
+      --description   Port description
+      --target        Cluster member name
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

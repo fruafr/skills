@@ -1,0 +1,44 @@
+cmd: incus network
+output:
+Description:
+  Manage and attach instances to networks
+
+Usage:
+  incus network [flags]
+  incus network [command]
+
+Available Commands:
+  acl              Manage network ACLs
+  attach           Attach network interfaces to instances
+  attach-profile   Attach network interfaces to profiles
+  create           Create new networks
+  delete           Delete networks
+  detach           Detach network interfaces from instances
+  detach-profile   Detach network interfaces from profiles
+  edit             Edit network configurations as YAML
+  forward          Manage network forwards
+  get              Get values for network configuration keys
+  info             Get runtime information on networks
+  integration      Manage network integrations
+  list             List available networks
+  list-allocations List network allocations in use
+  list-leases      List DHCP leases
+  load-balancer    Manage network load balancers
+  peer             Manage network peerings
+  rename           Rename networks
+  set              Set network configuration keys
+  show             Show network configurations
+  unset            Unset network configuration keys
+  zone             Manage network zones
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number
+
+Use "incus network [command] --help" for more information about a command.

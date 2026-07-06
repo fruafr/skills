@@ -1,0 +1,24 @@
+cmd: incus config edit
+output:
+Description:
+  Edit instance or server configurations as YAML
+
+Usage:
+  incus config edit [<remote>:][<instance>[/<snapshot>]] [flags]
+
+Examples:
+  incus config edit <instance> < instance.yaml
+      Update the instance configuration from config.yaml.
+
+Flags:
+      --target   Cluster member name
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

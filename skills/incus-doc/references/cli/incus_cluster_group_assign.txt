@@ -1,0 +1,27 @@
+cmd: incus cluster group assign
+output:
+Description:
+  Assign sets of groups to cluster members
+
+Usage:
+  incus cluster group assign [<remote>:]<member> <group> [flags]
+
+Aliases:
+  assign, apply
+
+Examples:
+  incus cluster group assign foo default,bar
+      Set the groups for "foo" to "default" and "bar".
+
+  incus cluster group assign foo default
+      Reset "foo" to only using the "default" cluster group.
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

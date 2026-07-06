@@ -1,0 +1,293 @@
+# INCUS - CLI - Help - incus cluster
+# Client version: 6.0.4
+# Server version: 6.0.4
+# main incus commands
+incus
+incus admin
+incus cluster
+incus config
+incus console
+incus copy
+incus create
+incus delete
+incus exec
+incus export
+incus file
+incus help
+incus image
+incus import
+incus info
+incus launch
+incus list
+incus move
+incus network
+incus pause
+incus profile
+incus project
+incus publish
+incus rebuild
+incus remote
+incus rename
+incus restart
+incus resume
+incus snapshot
+incus start
+incus stop
+incus storage
+incus top
+incus version
+incus webui
+## incus admin
+incus admin cluster
+incus admin init
+incus admin recover
+incus admin shutdown
+incus admin sql
+incus admin waitready
+## incus cluster
+incus cluster add
+incus cluster edit
+incus cluster enable
+incus cluster evacuate
+incus cluster get
+incus cluster group
+incus cluster info
+incus cluster list
+incus cluster list-tokens
+incus cluster remove
+incus cluster rename
+incus cluster restore
+incus cluster revoke-token
+incus cluster role
+incus cluster set
+incus cluster show
+incus cluster unset
+incus cluster update-certificate
+### incus cluster group
+incus cluster group add
+incus cluster group assign
+incus cluster group create
+incus cluster group delete
+incus cluster group edit
+incus cluster group list
+incus cluster group remove
+incus cluster group rename
+incus cluster group show
+### incus cluster role
+incus cluster role add
+incus cluster role remove
+## incus config
+incus config device
+incus config edit
+incus config get
+incus config metadata
+incus config set
+incus config show
+incus config template
+incus config trust
+incus config unset
+### incus config device
+incus config device add
+incus config device get
+incus config device list
+incus config device override
+incus config device remove
+incus config device set
+incus config device show
+incus config device unset
+### incus config metadata
+incus config metadata edit
+incus config metadata show
+### incus config trust
+incus config trust add
+incus config trust add-certificate
+incus config trust edit
+incus config trust list
+incus config trust list-tokens
+incus config trust remove
+incus config trust revoke-token
+incus config trust show
+## incus file
+incus file create
+incus file delete
+incus file edit
+incus file mount
+incus file pull
+incus file push
+## incus image
+incus image alias
+incus image copy
+incus image delete
+incus image edit
+incus image export
+incus image get-property
+incus image import
+incus image info
+incus image list
+incus image refresh
+incus image set-property
+incus image show
+incus image unset-property
+### incus image alias
+incus image alias create
+incus image alias delete
+incus image alias list
+incus image alias rename
+## incus network
+incus network acl
+incus network attach
+incus network attach-profile
+incus network create
+incus network delete
+incus network detach
+incus network detach-profile
+incus network edit
+incus network forward
+incus network get
+incus network info
+incus network integration
+incus network list
+incus network list-allocations
+incus network list-leases
+incus network load-balancer
+incus network peer
+incus network rename
+incus network set
+incus network show
+incus network unset
+incus network zone
+### incus network acl
+incus network acl create
+incus network acl delete
+incus network acl edit
+incus network acl get
+incus network acl list
+incus network acl rename
+incus network acl rule
+incus network acl set
+incus network acl show
+incus network acl show-log
+incus network acl unset
+#### incus network acl rule
+incus network acl rule add
+incus network acl rule remove
+### incus network forward
+incus network forward create
+incus network forward delete
+incus network forward edit
+incus network forward get
+incus network forward list
+incus network forward port
+incus network forward set
+incus network forward show
+incus network forward unset
+#### incus network forward port
+incus network forward port add
+incus network forward port remove
+### incus network integration
+incus network integration create
+incus network integration delete
+incus network integration edit
+incus network integration get
+incus network integration list
+incus network integration rename
+incus network integration set
+incus network integration show
+incus network integration unset
+## incus profile
+incus profile add
+incus profile assign
+incus profile copy
+incus profile create
+incus profile delete
+incus profile device
+incus profile edit
+incus profile get
+incus profile list
+incus profile remove
+incus profile rename
+incus profile set
+incus profile show
+incus profile unset
+### incus profile device
+incus profile device add
+incus profile device get
+incus profile device list
+incus profile device remove
+incus profile device set
+incus profile device show
+incus profile device unset
+## incus project
+incus project create
+incus project delete
+incus project edit
+incus project get
+incus project get-current
+incus project info
+incus project list
+incus project rename
+incus project set
+incus project show
+incus project switch
+incus project unset
+## incus remote
+incus remote add
+incus remote generate-certificate
+incus remote get-default
+incus remote list
+incus remote proxy
+incus remote remove
+incus remote rename
+incus remote set-url
+incus remote switch
+## incus snapshot
+incus snapshot create
+incus snapshot delete
+incus snapshot list
+incus snapshot rename
+incus snapshot restore
+incus snapshot show
+## incus storage
+incus storage bucket
+incus storage create
+incus storage delete
+incus storage edit
+incus storage get
+incus storage info
+incus storage list
+incus storage set
+incus storage show
+incus storage unset
+incus storage volume
+### incus storage bucket
+incus storage bucket create
+incus storage bucket delete
+incus storage bucket edit
+incus storage bucket export
+incus storage bucket get
+incus storage bucket import
+incus storage bucket key
+incus storage bucket list
+incus storage bucket set
+incus storage bucket show
+incus storage bucket unset
+### incus storage volume
+incus storage volume attach
+incus storage volume attach-profile
+incus storage volume copy
+incus storage volume create
+incus storage volume delete
+incus storage volume detach
+incus storage volume detach-profile
+incus storage volume edit
+incus storage volume export
+incus storage volume get
+incus storage volume import
+incus storage volume info
+incus storage volume list
+incus storage volume move
+incus storage volume rename
+incus storage volume set
+incus storage volume show
+incus storage volume snapshot
+incus storage volume unset

@@ -1,0 +1,28 @@
+cmd: incus project create
+output:
+Description:
+  Create projects
+
+Usage:
+  incus project create [<remote>:]<project> [flags]
+
+Examples:
+  incus project create p1
+      Create a project named p1
+
+  incus project create p1 < config.yaml
+      Create a project named p1 with configuration from config.yaml
+
+Flags:
+  -c, --config        Config key/value to apply to the new project
+      --description   Project description
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

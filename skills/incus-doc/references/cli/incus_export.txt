@@ -1,0 +1,26 @@
+cmd: incus export
+output:
+Description:
+  Export instances as backup tarballs.
+
+Usage:
+  incus export [<remote>:]<instance> [target] [--instance-only] [--optimized-storage] [flags]
+
+Examples:
+  incus export u1 backup0.tar.gz
+      Download a backup tarball of the u1 instance.
+
+Flags:
+      --compression         Compression algorithm to use (none for uncompressed)
+      --instance-only       Whether or not to only backup the instance (without snapshots)
+      --optimized-storage   Use storage driver optimized format (can only be restored on a similar pool)
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

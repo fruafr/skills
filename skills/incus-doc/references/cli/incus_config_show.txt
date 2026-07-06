@@ -1,0 +1,21 @@
+cmd: incus config show
+output:
+Description:
+  Show instance or server configurations
+
+Usage:
+  incus config show [<remote>:][<instance>[/<snapshot>]] [flags]
+
+Flags:
+  -e, --expanded   Show the expanded configuration
+      --target     Cluster member name
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

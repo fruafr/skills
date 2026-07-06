@@ -1,0 +1,24 @@
+cmd: incus profile copy
+output:
+Description:
+  Copy profiles
+
+Usage:
+  incus profile copy [<remote>:]<profile> [<remote>:]<profile> [flags]
+
+Aliases:
+  copy, cp
+
+Flags:
+      --refresh          Update the target profile from the source if it already exists
+      --target-project   Copy to a project different from the source
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

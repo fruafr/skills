@@ -1,0 +1,39 @@
+cmd: incus storage volume list
+output:
+Description:
+  List storage volumes
+
+  The -c option takes a (optionally comma-separated) list of arguments
+  that control which image attributes to output when displaying in table
+  or csv format.
+
+  Column shorthand chars:
+      c - Content type (filesystem or block)
+      d - Description
+      e - Project name
+      L - Location of the instance (e.g. its cluster member)
+      n - Name
+      t - Type of volume (custom, image, container or virtual-machine)
+      u - Number of references (used by)
+      U - Current disk usage
+
+Usage:
+  incus storage volume list [<remote>:]<pool> [<filter>...] [flags]
+
+Aliases:
+  list, ls
+
+Flags:
+      --all-projects   All projects
+  -c, --columns        Columns (default "etndcuL")
+  -f, --format         Format (csv|json|table|yaml|compact), use suffix ",noheader" to disable headers and ",header" to enable it if missing, e.g. csv,header (default "table")
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

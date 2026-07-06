@@ -1,0 +1,24 @@
+cmd: incus cluster enable
+output:
+Description:
+  Enable clustering on a single non-clustered server
+
+    This command turns a non-clustered server into the first member of a new
+    cluster, which will have the given name.
+
+    It's required that the server is already available on the network. You can check
+    that by running 'incus config get core.https_address', and possibly set a value
+    for the address if not yet set.
+
+Usage:
+  incus cluster enable [<remote>:] <name> [flags]
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

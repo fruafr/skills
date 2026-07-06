@@ -1,0 +1,17 @@
+cmd: incus config trust revoke-token
+output:
+Description:
+  Revoke certificate add token
+
+Usage:
+  incus config trust revoke-token [<remote>:] <name> [flags]
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

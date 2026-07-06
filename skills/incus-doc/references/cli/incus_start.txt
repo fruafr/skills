@@ -1,0 +1,22 @@
+cmd: incus start
+output:
+Description:
+  Start instances
+
+Usage:
+  incus start [<remote>:]<instance> [[<remote>:]<instance>...] [flags]
+
+Flags:
+      --all                   Run against all instances
+      --console[="console"]   Immediately attach to the console
+      --stateless             Ignore the instance state
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

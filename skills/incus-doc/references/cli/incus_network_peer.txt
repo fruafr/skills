@@ -1,0 +1,30 @@
+cmd: incus network peer
+output:
+Description:
+  Manage network peerings
+
+Usage:
+  incus network peer [flags]
+  incus network peer [command]
+
+Available Commands:
+  create      Create new network peering
+  delete      Delete network peerings
+  edit        Edit network peer configurations as YAML
+  get         Get values for network peer configuration keys
+  list        List available network peers
+  set         Set network peer keys
+  show        Show network peer configurations
+  unset       Unset network peer configuration keys
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number
+
+Use "incus network peer [command] --help" for more information about a command.

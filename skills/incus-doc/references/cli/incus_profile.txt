@@ -1,0 +1,36 @@
+cmd: incus profile
+output:
+Description:
+  Manage profiles
+
+Usage:
+  incus profile [flags]
+  incus profile [command]
+
+Available Commands:
+  add         Add profiles to instances
+  assign      Assign sets of profiles to instances
+  copy        Copy profiles
+  create      Create profiles
+  delete      Delete profiles
+  device      Manage devices
+  edit        Edit profile configurations as YAML
+  get         Get values for profile configuration keys
+  list        List profiles
+  remove      Remove profiles from instances
+  rename      Rename profiles
+  set         Set profile configuration keys
+  show        Show profile configurations
+  unset       Unset profile configuration keys
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number
+
+Use "incus profile [command] --help" for more information about a command.

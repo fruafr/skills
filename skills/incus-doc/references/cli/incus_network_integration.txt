@@ -1,0 +1,31 @@
+cmd: incus network integration
+output:
+Description:
+  Manage network integrations
+
+Usage:
+  incus network integration [flags]
+  incus network integration [command]
+
+Available Commands:
+  create      Create network integrations
+  delete      Delete network integrations
+  edit        Edit network integration configurations as YAML
+  get         Get values for network integration configuration keys
+  list        List network integrations
+  rename      Rename network integrations
+  set         Set network integration configuration keys
+  show        Show network integration options
+  unset       Unset network integration configuration keys
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number
+
+Use "incus network integration [command] --help" for more information about a command.

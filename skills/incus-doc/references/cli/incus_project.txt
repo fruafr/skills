@@ -1,0 +1,34 @@
+cmd: incus project
+output:
+Description:
+  Manage projects
+
+Usage:
+  incus project [flags]
+  incus project [command]
+
+Available Commands:
+  create      Create projects
+  delete      Delete projects
+  edit        Edit project configurations as YAML
+  get         Get values for project configuration keys
+  get-current Show the current project
+  info        Get a summary of resource allocations
+  list        List projects
+  rename      Rename projects
+  set         Set project configuration keys
+  show        Show project options
+  switch      Switch the current project
+  unset       Unset project configuration keys
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number
+
+Use "incus project [command] --help" for more information about a command.

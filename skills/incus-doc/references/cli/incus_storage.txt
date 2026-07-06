@@ -1,0 +1,33 @@
+cmd: incus storage
+output:
+Description:
+  Manage storage pools and volumes
+
+Usage:
+  incus storage [flags]
+  incus storage [command]
+
+Available Commands:
+  bucket      Manage storage buckets
+  create      Create storage pools
+  delete      Delete storage pools
+  edit        Edit storage pool configurations as YAML
+  get         Get values for storage pool configuration keys
+  info        Show useful information about storage pools
+  list        List available storage pools
+  set         Set storage pool configuration keys
+  show        Show storage pool configurations and resources
+  unset       Unset storage pool configuration keys
+  volume      Manage storage volumes
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number
+
+Use "incus storage [command] --help" for more information about a command.

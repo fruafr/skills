@@ -1,0 +1,21 @@
+cmd: incus network forward port remove
+output:
+Description:
+  Remove ports from a forward
+
+Usage:
+  incus network forward port remove [<remote>:]<network> <listen_address> [<protocol>] [<listen_port(s)>] [flags]
+
+Flags:
+      --force    Remove all ports that match
+      --target   Cluster member name
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

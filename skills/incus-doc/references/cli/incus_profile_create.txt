@@ -1,0 +1,27 @@
+cmd: incus profile create
+output:
+Description:
+  Create profiles
+
+Usage:
+  incus profile create [<remote>:]<profile> [flags]
+
+Examples:
+  incus profile create p1
+      Create a profile named p1
+
+  incus profile create p1 < config.yaml
+      Create a profile named p1 with configuration from config.yaml
+
+Flags:
+      --description   Profile description
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

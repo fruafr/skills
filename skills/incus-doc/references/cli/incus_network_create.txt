@@ -1,0 +1,32 @@
+cmd: incus network create
+output:
+Description:
+  Create new networks
+
+Usage:
+  incus network create [<remote>:]<network> [key=value...] [flags]
+
+Examples:
+  incus network create foo
+      Create a new network called foo
+
+  incus network create foo < config.yaml
+      Create a new network called foo using the content of config.yaml.
+
+  incus network create bar network=baz --type ovn
+      Create a new OVN network called bar using baz as its uplink network
+
+Flags:
+      --description   Network description
+      --target        Cluster member name
+  -t, --type          Network type
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

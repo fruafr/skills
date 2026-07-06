@@ -1,0 +1,29 @@
+cmd: incus profile device
+output:
+Description:
+  Manage devices
+
+Usage:
+  incus profile device [flags]
+  incus profile device [command]
+
+Available Commands:
+  add         Add instance devices
+  get         Get values for device configuration keys
+  list        List instance devices
+  remove      Remove instance devices
+  set         Set device configuration keys
+  show        Show full device configuration
+  unset       Unset device configuration keys
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number
+
+Use "incus profile device [command] --help" for more information about a command.

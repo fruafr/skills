@@ -1,0 +1,23 @@
+cmd: incus storage volume delete
+output:
+Description:
+  Delete custom storage volumes
+
+Usage:
+  incus storage volume delete [<remote>:]<pool> <volume> [flags]
+
+Aliases:
+  delete, rm
+
+Flags:
+      --target   Cluster member name
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number

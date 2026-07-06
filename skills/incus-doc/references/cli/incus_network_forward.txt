@@ -1,0 +1,31 @@
+cmd: incus network forward
+output:
+Description:
+  Manage network forwards
+
+Usage:
+  incus network forward [flags]
+  incus network forward [command]
+
+Available Commands:
+  create      Create new network forwards
+  delete      Delete network forwards
+  edit        Edit network forward configurations as YAML
+  get         Get values for network forward configuration keys
+  list        List available network forwards
+  port        Manage network forward ports
+  set         Set network forward keys
+  show        Show network forward configurations
+  unset       Unset network forward configuration keys
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number
+
+Use "incus network forward [command] --help" for more information about a command.

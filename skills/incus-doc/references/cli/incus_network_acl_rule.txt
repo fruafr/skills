@@ -1,0 +1,23 @@
+cmd: incus network acl rule
+output:
+Description:
+  Manage network ACL rules
+
+Usage:
+  incus network acl rule [command]
+
+Available Commands:
+  add         Add rules to an ACL
+  remove      Remove rules from an ACL
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number
+
+Use "incus network acl rule [command] --help" for more information about a command.

@@ -1,0 +1,2 @@
+Client version: 6.0.4
+Server version: 6.0.4

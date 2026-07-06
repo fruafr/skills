@@ -1,0 +1,30 @@
+cmd: incus cluster group
+output:
+Description:
+  Manage cluster groups
+
+Usage:
+  incus cluster group [command]
+
+Available Commands:
+  add         Add member to group
+  assign      Assign sets of groups to cluster members
+  create      Create a cluster group
+  delete      Delete a cluster group
+  edit        Edit a cluster group
+  list        List all the cluster groups
+  remove      Remove member from group
+  rename      Rename a cluster group
+  show        Show cluster group configurations
+
+Global Flags:
+      --debug          Show all debug messages
+      --force-local    Force using the local unix socket
+  -h, --help           Print help
+      --project        Override the source project
+  -q, --quiet          Don't show progress information
+      --sub-commands   Use with help or --help to view sub-commands
+  -v, --verbose        Show all information messages
+      --version        Print version number
+
+Use "incus cluster group [command] --help" for more information about a command.
