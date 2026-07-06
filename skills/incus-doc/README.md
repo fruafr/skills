@@ -64,7 +64,7 @@ It scales from one instance on a single machine to a cluster in a full data cent
 Incus allows you to easily set up a system that feels like a small private cloud. You can run any type of workload in an efficient way while keeping your resources optimized.
 
 ## Official sources of documentation
-- [Incus - Documentation (on linuxcontainers)](https://linuxcontainers.org/incus/doc/main)
+- [Incus - Documentation (on linuxcontainers)](https://linuxcontainers.org/incus/docs/main/)
 - [Incus - Github](https://github.com/lxc/incus)
   - [doc/explanation](https://github.com/lxc/incus/tree/main/doc/explanation)
   - [doc/howto](https://github.com/lxc/incus/tree/main/doc/howto)
