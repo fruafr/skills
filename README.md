@@ -4,7 +4,7 @@ This repository contains agent skills (folders of instructions, scripts, and res
 
 ## Setup
 
-The content of the [./skills] folder should be copied to the relevant skills folder: 
+The content of the [./skills](./skills) folder should be copied to the relevant skills folder: 
 
 - Compatible Projet Claude: .claude/skills/<name>/SKILL.md
 - Compatible Global Claude: ~/.claude/skills/<name>/SKILL.md
